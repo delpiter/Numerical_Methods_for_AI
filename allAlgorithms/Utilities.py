@@ -77,4 +77,3 @@ plt.show()
 plt.contour(X, Y,superfici[0,:,:], levels=[0], colors='black')
 plt.contour(X, Y,superfici[1,:,:], levels=[0], colors='red')
 plt.show()
-

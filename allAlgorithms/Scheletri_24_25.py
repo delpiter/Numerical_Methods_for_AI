@@ -2,41 +2,41 @@
 
 import math
 def sign(x):
-  """
-  Funzione segno che restituisce 1 se x è positivo, 0 se x è zero e -1 se x è negativo.
-  """
-  return math.copysign(1, x)
+    """
+    Funzione segno che restituisce 1 se x è positivo, 0 se x è zero e -1 se x è negativo.
+    """
+    return math.copysign(1, x)
 
 def metodo_bisezione(fname, a, b, tolx):
  
- fa=fname(a)
- fb=fname(b)
- if #to do
-     print("Non è possibile applicare il metodo di bisezione \n")
-     return None, None,None
-
- it = 0
- v_xk = []
-
- 
- 
- while #to do
-    xk = #to do
-    v_xk.append(xk)
-    it += 1
-    fxk=fname(xk)
+    fa=fname(a)
+    fb=fname(b)
+    if #to do
+        print("Non è possibile applicare il metodo di bisezione \n")
+        return None, None,None
+    
+    it = 0
+    v_xk = []
+    
+    
+    
+    while #to do
+        xk = #to do
+        v_xk.append(xk)
+        it += 1
+        fxk=fname(xk)
     if fxk==0:
-      return xk, it, v_xk
-
+        return xk, it, v_xk
+    
     if # to do
-      a = #to do 
-      fa= #to do 
+        a = #to do 
+        fa= #to do 
     elif # to do
-      b =
-      fb=
-
- 
- return xk, it, v_xk
+        b =
+        fb=
+    
+    
+    return xk, it, v_xk
 
 def falsa_posizione(fname,a,b,tolx,tolf,maxit):
     fa=fname(a)
@@ -74,145 +74,145 @@ def falsa_posizione(fname,a,b,tolx,tolf,maxit):
 def corde(fname,coeff_ang,x0,tolx,tolf,nmax):
     
      # coeff_ang è il coefficiente angolare della retta che rimane fisso per tutte le iterazioni
-        xk=[]
+    xk=[]
+    
+    it=0
+    errorex=1+tolx
+    erroref=1+tolf
+    while #to do
+       
+       fx0=# to do
+       d=# to do
+      
+       x1=#to do
+       fx1=#
+       if x1!=0:
+            errorex=#to do 
+       else:
+            errorex=#to do
+       
+       erroref=#to do
+       
+       x0=x1
+       it=it+1
+       xk.append(x1)
+      
+    if it==nmax:
+        print('Corde : raggiunto massimo numero di iterazioni \n')
         
-        it=0
-        errorex=1+tolx
-        erroref=1+tolf
-        while #to do
-           
-           fx0=# to do
-           d=# to do
-          
-           x1=#to do
-           fx1=#
-           if x1!=0:
-                errorex=#to do 
-           else:
-                errorex=#to do
-           
-           erroref=#to do
-           
-           x0=x1
-           it=it+1
-           xk.append(x1)
-          
-        if it==nmax:
-            print('Corde : raggiunto massimo numero di iterazioni \n')
-            
-        
-        return x1,it,xk
+    
+    return x1,it,xk
     
 def newton(fname,fpname,x0,tolx,tolf,nmax):
   
-        xk=[]
+    xk=[]
+    
+    it=0
+    errorex=1+tolx
+    erroref=1+tolf
+    while #to do
        
-        it=0
-        errorex=1+tolx
-        erroref=1+tolf
-        while #to do
-           
-           fx0=fname(x0)
-           if #to do
-                print(" derivata prima nulla in x0")
-                return None, None,None
-           d=#to do 
-
-           x1=#to do
-           fx1=fname(x1)
-           erroref=np.abs(fx1)
-           if x1!=0:
-                errore=#to do
-           else:
-                errore=#to do 
-
-           it=it+1
-           x0=x1
-           xk.append(x1)
-          
-        if it==nmax:
-            print('Newton: raggiunto massimo numero di iterazioni \n')
-            
+       fx0=fname(x0)
+       if #to do
+            print(" derivata prima nulla in x0")
+            return None, None,None
+       d=#to do 
+    
+       x1=#to do
+       fx1=fname(x1)
+       erroref=np.abs(fx1)
+       if x1!=0:
+            errore=#to do
+       else:
+            errore=#to do 
+    
+       it=it+1
+       x0=x1
+       xk.append(x1)
+      
+    if it==nmax:
+        print('Newton: raggiunto massimo numero di iterazioni \n')
         
-        return x1,it,xk
+    
+return x1,it,xk
 
 def newton_modificato(fname,fpname,m,x0,tolx,tolf,nmax):
   
-        #m è la molteplicità dello zero
+    #m è la molteplicità dello zero
     
-         xk=[]
+     xk=[]
+    
+    it=0
+    errorex=1+tolx
+    erroref=1+tolf
+    while #to do
        
-        it=0
-        errorex=1+tolx
-        erroref=1+tolf
-        while #to do
-           
-           fx0=fname(x0)
-           if #to do
-                print(" derivata prima nulla in x0")
-                return None, None,None
-           d=#to do 
-
-           x1=#to do
-           fx1=fname(x1)
-           erroref=np.abs(fx1)
-           if x1!=0:
-                errore=#to do
-           else:
-                errore=#to do 
-
-           it=it+1
-           x0=x1
-           xk.append(x1)
-          
-        if it==nmax:
-            print('Newton modificato: raggiunto massimo numero di iterazioni \n')
-            
+       fx0=fname(x0)
+       if #to do
+            print(" derivata prima nulla in x0")
+            return None, None,None
+       d=#to do 
+    
+       x1=#to do
+       fx1=fname(x1)
+       erroref=np.abs(fx1)
+       if x1!=0:
+            errore=#to do
+       else:
+            errore=#to do 
+    
+       it=it+1
+       x0=x1
+       xk.append(x1)
+      
+    if it==nmax:
+        print('Newton modificato: raggiunto massimo numero di iterazioni \n')
         
-        return x1,it,xk
+    
+    return x1,it,xk
     
 def secanti(fname,xm1,x0,tolx,tolf,nmax):
-        xk=[]
+    xk=[]
+    
+    it=0
+    errorex=1+tolx
+    erroref=1+tolf
+    while #to do
         
-        it=0
-        errorex=1+tolx
-        erroref=1+tolf
-        while #to do
+        fxm1=#to do
+        fx0=#to do 
+        d=#to do 
+    
+        x1=#to do 
+      
+        
+        fx1=fname(x1)
+        xk.append(x1);
+        if x1!=0:
+            errorex=#to do 
+        else:
+            errorex=#to do
             
-            fxm1=#to do
-            fx0=#to do 
-            d=#to do 
-
-            x1=#to do 
-          
-            
-            fx1=fname(x1)
-            xk.append(x1);
-            if x1!=0:
-                errorex=#to do 
-            else:
-                errorex=#to do
-                
-            erroref=#to do 
-            xm1=#to do 
-            x0=#to do
-            
-            it=it+1;
-           
+        erroref=#to do 
+        xm1=#to do 
+        x0=#to do
+        
+        it=it+1;
        
-        if it==nmax:
-           print('Secanti: raggiunto massimo numero di iterazioni \n')
-        
-        return x1,it,xk
+    
+    if it==nmax:
+       print('Secanti: raggiunto massimo numero di iterazioni \n')
+    
+    return x1,it,xk
     
 def stima_ordine(xk,iterazioni):
-     #Vedi dispensa allegata per la spiegazione
-
-      k=iterazioni-4
-      p=np.log(abs(xk[k+2]-xk[k+3])/abs(xk[k+1]-xk[k+2]))/np.log(abs(xk[k+1]-xk[k+2])/abs(xk[k]-xk[k+1]));
-     
-      ordine=p
-      return ordine
+    #Vedi dispensa allegata per la spiegazione
+    
+    k=iterazioni-4
+    p=np.log(abs(xk[k+2]-xk[k+3])/abs(xk[k+1]-xk[k+2]))/np.log(abs(xk[k+1]-xk[k+2])/abs(xk[k]-xk[k+1]));
+    
+    ordine=p
+    return ordine
 
 
 #Soluzione di sistemi di equazioni non lineari
@@ -259,7 +259,7 @@ def newton_raphson(initial_guess, F_numerical, J_Numerical, tolX, tolF, max_iter
     
     return X,it,errore
 
-def def newton_raphson_corde(initial_guess, F_numerical, J_Numerical, tolX, tolF, max_iterations):
+def newton_raphson_corde(initial_guess, F_numerical, J_Numerical, tolX, tolF, max_iterations):
     
 
     X= np.array(initial_guess, dtype=float)

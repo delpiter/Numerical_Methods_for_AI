@@ -134,7 +134,7 @@ def newton(fname,fpname,x0,tolx,tolf,nmax):
         print('Newton: raggiunto massimo numero di iterazioni \n')
         
     
-return x1,it,xk
+    return x1,it,xk
 
 def newton_modificato(fname,fpname,m,x0,tolx,tolf,nmax):
   
@@ -221,8 +221,6 @@ def newton_raphson(initial_guess, F_numerical, J_Numerical, tolX, tolF, max_iter
 
     X= np.array(initial_guess, dtype=float)
     
-   
-
     it=0
     
     erroreF=1+tolF
@@ -264,8 +262,6 @@ def newton_raphson_corde(initial_guess, F_numerical, J_Numerical, tolX, tolF, ma
 
     X= np.array(initial_guess, dtype=float)
     
-   
-
     it=0
     
     erroreF=1+tolF
@@ -615,12 +611,12 @@ def plagr(xnodi,j):
 
 def InterpL(x, y, xx):
      
-     n=#to do
-     m=#to do 
-     L=np.zeros((m,n))
-     for j #to do :
+    n=#to do
+    m=#to do 
+    L=np.zeros((m,n))
+    for j #to do :
         p=#to do 
         L[:,j]=#to do 
     
     
-     return #to do 
+    return #to do 
